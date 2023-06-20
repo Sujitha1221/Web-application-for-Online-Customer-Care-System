@@ -22,15 +22,14 @@
 				<a href="Product.jsp">New Product</a>
 				<a href="allProducts.jsp">All Products</a>
                 <a href="adminUpdate.jsp"><%=session.getAttribute("uname") %></a>
-                <a href="Show.jsp">All Users</a>
-                
+                 <a href="logout.jsp">Logout</a>
 
 			</center>
 		</div>
 		<div class="user_cart">
 			<center>
 					<a href="#"><img src="images/shopping-cart .png"></a>
-					<a href="logout"><img src="images/user.png"></a>
+					<a href="#"><img src="images/user.png"></a>
 			</center>
 		<div class="clrfix"></div>
 
@@ -47,16 +46,16 @@
           />
         </div>
         <div class="rightside">
-          <form action="ProductServlet" method="post">
+          <form action="faqServlet" method="post">
             <h1>PRODUCT FORM</h1>
             <h2>Product details </h2>
-            <p>Product id</p>
+            <p>product id</p>
             <input type="text" class="inputbox" name="id" id="id" required />
-            <p>Product name</p>
+            <p>product name</p>
             <input type="text" class="inputbox" name="name" required />
-            <p>Price</p>
+            <p>price</p>
             <input type="text" class="inputbox" name="price" id="price"  min=1000, max= 100000 required />
-            <p>Description about the product</p>
+            <p>description of product</p>
             <input type="text" class="inputbox" name="description" id="description" required />
             <p></p>
             <button type="submit" class="button">Submit</button>

@@ -31,8 +31,7 @@
 				<a href="Product.jsp">New Product</a>
 				<a href="allProducts.jsp">All Products</a>
                 <a href="adminUpdate.jsp"><%=session.getAttribute("uname") %></a>
-                <a href="Show.jsp">All Users</a>
-                
+                 <a href="logout.jsp">Logout</a>
 
 			</center>
 
@@ -42,7 +41,7 @@
 		<div class="user_cart">
 			
 					<a href="#"><img src="images/shopping-cart .png"></a>
-					<a href="logout"><img src="images/user.png"></a>
+					<a href="login.jsp"><img src="images/user.png"></a>
 			
 
 		
