@@ -6,35 +6,32 @@
 <link rel = "stylesheet" href = "css/faqStyle.css">
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>TechX</title>
+<title>Admin Login</title>
 </head>
 
 <body>
-<div class = "mainscreen">
-<div class = "card">
-<div class = "leftside">
-<img src = "images/login.jpg">
-</div>
-<div class = "rightside">
-
-<form action="login" method="post">
-<h1>Login</h1>
-          User name : <input  type="text" name="username" placeholder="User name" class = "inputbox" required=""><br><br>
+<div class="mainscreen">
+      <div class="card">
+        <div class="leftside">
+          <img
+            src="images/login.jpg""
+            class="product"
+            alt="contactUs"
+          />
+        </div>
+        <div class="rightside">
+          <form action="AdminLogin" method="post">
+            <h1>Admin Login</h1>
+          Admin name : <input  type="text" name="uname" placeholder="Admin name" class = "inputbox" required=""><br><br>
           
-          Password:<input  type="password" name="password" placeholder="Password" class = "inputbox" required=""><br><br>
+          Password:<input  type="password" name="apwd" placeholder="Password" class = "inputbox" required=""><br><br>
           <div class="wthree-text">
-            
-            <div class="clear"> </div>
-          </div>
-          <input type="submit" value="Login" class = "button">
-        </form>
-        <form action = "registration.jsp">
-        <input type="submit" value="Register" class = "button"><br><br>
-        </form>
+          <div class="clear"> </div>
+            <button type="submit"  value="Login" class="button">Login</button>
+          </form>
         </div>
-        </div>
-        </div>
-        
+      </div>
+    </div>
        
 </body>
 </html>

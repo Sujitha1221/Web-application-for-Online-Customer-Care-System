@@ -4,14 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>TechX</title>
+<title>Insert title here</title>
 </head>
 <body>
 <%
-session.invalidate();//invalidate the session variable
+session.invalidate();
 %>
 <h1>Logged out successfully</h1>
-<a href = "index.jsp">Home</a>
+<a href = "login.jsp">Home</a>
 
 
 </body>

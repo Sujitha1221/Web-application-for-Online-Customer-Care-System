@@ -1,37 +1,33 @@
-<%
-if (session.getAttribute("uname") == null){
-	response.sendRedirect("registration.jsp");
-}
-%>
-
 <!DOCTYPE html>
 <html>
 <head>
-
-	<link rel="stylesheet" href="css/hs.css" type="text/css">
+	<title>Home Page</title>
+	<link rel="stylesheet" href="css/headFoot.css" type="text/css">
     <link rel="stylesheet" href="css/Home.css" type="text/css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="js/slider.js"></script>
-<title>Home</title>
+    <script src="js\slider.js"></script>
+
 </head>
 <body>
 <!-- Header-start -->
 
 	<div class="header">
 		
-		<div class="logo_box"><img src="images/logo.png"></div>
+		<div class="logo_box"><img src="images/logo1.png"></div>
 
 		<div class="nav_bar">
-		<center>
-		
+			
+			<center>
+
 				<div class="search"><i class="fa fa-search" aria-hidden="true"></i><input type="text" name="search" id="search"></div>
 
 				<a href="index.jsp">Home</a>
-				<a href="review.jsp">Reviews</a>
-				<a href="faq.jsp">FAQs</a>
-				<a href="productview.jsp">Products</a>		
-                <a href="logout">Logout</a>
-                <a href="UserProfile.jsp"><%=session.getAttribute("uname") %></a>
+				<a href="showAll.jsp">Reviews</a>
+				<a href="showAllMsg.jsp">FAQs</a>
+				<a href="Product.jsp">New Product</a>
+				<a href="allProducts.jsp">All Products</a>
+                <a href="adminUpdate.jsp"><%=session.getAttribute("uname") %></a>
+                <a href="Show.jsp">All Users</a>
 
 			</center>
 
@@ -41,7 +37,7 @@ if (session.getAttribute("uname") == null){
 		<div class="user_cart">
 			<center>
 					<a href="#"><img src="images/shopping-cart .png"></a>
-					<a href="UpdateUser.jsp"><img src="images/user.png"></a>
+					<a href="logout"><img src="images/user.png"></a>
 			</center>
 
 		
@@ -274,8 +270,6 @@ if (session.getAttribute("uname") == null){
 
     <div class="footer">
 
-	
-	
         <div class="footer_sect_1">
             <div class="social">
                 <center>
@@ -284,38 +278,14 @@ if (session.getAttribute("uname") == null){
                     <a href="#"><img src="images/instagram.png"></a>
                 </center>
             </div> 
-            
-            
             <h3>Company</h3>
-            
             <ul>
-    
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Privacy Policy</a></li>
-    
-    
-            </ul>
-        
-            
-        </div>
-        
-        
+            </ul>  
+        </div> 
  <!-- Footer - End -->
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     </div>
     
