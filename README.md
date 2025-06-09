@@ -14,7 +14,6 @@ The **Online Customer Care System** is a web application developed to help manag
 - FAQ Handling
 - Customer Reviews Management
 - Secure Login and Session Handling
-- Responsive UI
 
 ---
 
